@@ -15,20 +15,11 @@
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 		<link rel="stylesheet" href="./styles.css" />
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
 		<div class="container">
 			<div class="controls">
-				<img src="./images/logo.svg" alt="logo" />
+				<img src="./images/logo.svg" alt="logo" class="logo" />
 				<div class="icons">
 					<div class="icon-container">
 						<img src="./images/icon-document.svg" alt="document" />
@@ -42,15 +33,20 @@
 				</div>
 			</div>
 			<div class="measures">
-				<div class="line">You’ve used 815 GB of your storage</div>
-				<div class="controlbar">0 GB 1000 GB</div>
-				<div class="remain">185 GB Left</div>
+				<div class="line">You’ve used <span style="color: white; font-weight: 400">815 GB</span> of your storage</div>
+				<div class="progress-container">
+					<progress max="500" value="70"></progress>
+				</div>
+				<div class="remain"><span class="big-text">185</span> GB LEFT</div>
+				<div class="bar-limits">
+					<div class="inferior" style="color: white">0 GB</div>
+					<div class="superior" style="color: white">1000 GB</div>
+				</div>
 			</div>
 		</div>
-
-		<!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">adrnmatos</a>.
-  </div> -->
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+			<a href="#">adrnmatos</a>.
+		</div>
 	</body>
 </html>
